@@ -1,27 +1,29 @@
 <!doctype html>
-<html>
+<html lang="en-US">
     <head>
         <title>Python_notes</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
-        <link
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript"/>
+        <meta charset="utf-8">
+        <meta name="viewport" contect="width=device-width, initial-scale=1">
+        <rel="stylesheet"
+            link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body style ="background:#004a4a; padding-right: 10px; padding-left: 10px;">
-        <header style ="color:#ddd; padding-left:10px; background:black; padding-top: 60px; text-align:left;">
-            <button style =""><a href="http://127.0.0.1:5500/index.html">back</a></button>
-                <h1>Python notes</h1>
+        <header class="container-fluid" style ="color:#ddd; padding-left:10px; background:black; padding-top: 60px; text-align:left;">
+            <button><a href="index.html">back</a></button>
+                <h1><ins>Python notes</ins></h1>
         </header>
-        <section style="background:rgb(201, 201, 198);">
+        <section class ="container-fluid" style="background:rgb(201, 201, 198);">
         <ul style ="font-weight: bold; font-size: 20px;"> 
+               <div class="row">
                 <li>
                     <p>Python files end with .py</p>
                 </li>
                 <li>
-                        <p>Indentation is key in python not just for readability but python uses indentation to show a block of code.</p>
+                    <p>Indentation is key in python not just for readability but python uses indentation to show a block of code.</p>
                 <li>
                     <p>docstring - python document strings(or docstrings)provide a convenient way of        associating documentation with python modules,functions,classes,and methods.</p>
                 </li>
-
                 <li>
                     <p>In python comment is made begining with # and everything after # is ignored.comments are used to let other programmers know what your code means.</p>
                 </li>
@@ -30,26 +32,121 @@
                 <li>
                     <p>In python there are two types of numbers ie intigers (int) which comprise of whole numbers eg 1, 23, 100 and float(float) nambers which have a decimal eg 1.0</p>
                 </li>
+                </div>
+                <li>
+                    <ins>Complex</ins>: The complex() method returns a complex number when real and imaginary parts are provided, or it converts a string to a complex number.
+                    the syntax of complex is ([real[, imag]]).
+                </li>
+                <li>
+                    <ins>iterators</ins>:An iterator is an object that contains a countable number of values.an iterator is an object that can be iterated upon,meaning that you can traverse through all the values. Technnically,in Python, an iterator is an object which implements the iterator protocol,which consist of the methods __iter__ () and __next__().list,dictionaries,tuples,and sets are all iterable objects.They are iterable containers which you can get an iterator from.
+                </li>
+                <li>
+                    <p><ins>type casting</ins>: Python type casting or type conversion,is a method of changing an entity from one data type to another.It is used in computer programming to ensure variables are correctly processed by a function. An ecample of typecasting is converting an integer to a string.</p>
+                </li>
                 <li><p>In python you change things to intigers using the int() function and float using the float() function.</p>
                 </li>
                 <li>
                     <p>Python has the following operators;
                     <ol>
-                        <li>arithmatic operators;(*)operator for multiplication,(/) operator for division,(%) for remainder after two numbers are divided,(**)for exponential calculations</li>
-                        <li>Assignment operators;
+                        <li>
+                            <ins>arithmatic operators</ins>: (*)operator for multiplication, (/) operator for division,(%) for remainder after two numbers are divided, (**)for exponential calculations
+                        </li>
+                        <li>
+                            <ins>Assignment operators</ins>:
                             the basic python assignment operator is (=)</li>    
-                        <li>Pythton has the following membership operators;(in) evaluates to true if it finds a variable in the specified sequenc and false otherwise,(not in)evaluates to true if it does not find a variable in the specitied sequence and false otherwise.</li>
-                        <li>Python identity operators;
-                            the python identity operator is (is not)</p></li>
-                        <li>Python Bitwise operators</li>    
+                        <li>
+                            <ins>Pythton has the following membership operators</ins>: (in) evaluates to true if it finds a variable in the specified sequenc and false otherwise, (not in)evaluates to true if it does not find a variable in the specitied sequence and false otherwise.
+                        </li>
+                        <li>
+                            <ins>Python identity operators</ins>:
+                            the python identity operator is (is not)</p>
+                        </li>
+                        <li>
+                            <ins>Python Bitwise operators</ins>: & Binary AND copies a bit to the result if it exists in both operands 
+                            <small>
+                                <pre>
+                                    eg (a & b) means (0000 1100).
+                                </pre>
+                            </small>
+                            | Binary OR copies a bit if it exists in either operands 
+                            <small>
+                                <pre>
+                                    eg (a|b) = 61 means (00111101).
+                                </pre>
+                            </small>
+                            ^ Binary XOR copies the bit if it is set in one operand but not both. 
+                            <small>
+                                <pre>
+                                    eg (a ^ b) = 49 means (00110001).
+                                </pre>
+                            </small>
+                            ~ Binary Ones Complement;It is unary and has the effect of flipping bits (~a) = -61 means 11000011 in 2's compliment form due to a signed binary number,
+                            << Binary left shift; The left operands value is moved left by the number of bits specified by the right operand 
+                            <small>
+                                <pre>
+                                    eg a << 2 = 240 means (11110000).
+                                </pre>
+                            </small>
+                            >> Binary Right Shift; The left operands value is moved right by the number of bits specified by the right operand 
+                            <small>
+                                <pre>
+                                    eg a >> 2 = 15.
+                                </pre>
+                            </small>
+                        </li>    
                     </ol>
                 </li>
-                
+                <li>
+                    Collections module implements high performance container datatypes beyond the in built types like dictionaries, lists, tuples.
+                </li>
+                <li>
+                    <ins>functions</ins>: Classes and objects;Python is aan object oriented programming language.almost everythong in Python is an object,with its properties and methods.A class is like an object constructor, or a blueprint for creating objects.
+                     to create a class,use the keyword -class-
+                 <small>
+                     <pre>
+                         eg class Myclass:
+                          x = 5;
+                     </pre>
+                 </small>
+                 </li>
+                <li>
+                    <ins>lambda functions</ins>: lambda function is used for creating small, one-time and anonymous function objects in Python
+                 <small>   
+                    <pre>
+                        Basic syntax
+                        lambda arguments:
+                        expression
+                    </pre>
+                </small>                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    <ins>working with dates</ins>:The datetime module supplies classes for manipulating dates and times in both simple and complex ways.While date and time arithmetic is supported, the focus of the implementation is on efficient attribute extraction for output formatting and manipulation.
+                </li>
+                <li>
+                    <ins>modules</ins>: Modules in python are simply Python files with a .py extension.The name of the mofule will be the name of the file.A Python module can have a set of functions, classes or varioables defined and implemented.
+                </li>
+                <li>
+                    <ins>Working with json</ins>: javascript object Notation or json is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute-value pairs and array data types.it is a very common data format for asynchronous browser-server communocation and sometimes used as a replacement of XML.
+                </li>
+                <li>
+                    <ins>Exeptional handling</ins>: The try and except block in python is used to catch and handle exceptions.Python executes code following the try statement as a normal part of the program.The code that follows the except statement is the program's response to any exceptions in the preceding try clause.
+                </li>
+                <li>
+                    <ins>File handling</ins>: File handling is an important part of any web application.
+                    Python has sevaral functions for creating, reading, updating and deleting files.the key function for working with files in python is the open() function.
+                </li>
+                <li>
+                    <ins>Pip</ins>: Pip is a package management system used to install and manage software packages written in Python.
+                    <p>Many packages can be found in the default source for packages and their dependencies.</p>
+                </li>                
         </ul>
     </section>
 
     </body>
-    <footer style ="font-weight:bold; padding:50px; color:#ddd; text-align:center; background:black;">
-        krieglro
+    <footer class ="container-fluid" style ="font-weight:bold; padding:50px; color:#ddd; text-align:center; background:black;">
+        <small>krieglro</small>
     </footer>
 </html>
